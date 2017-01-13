@@ -17,7 +17,12 @@ Optionally, to print the template:
 - [CUPS](http://www.cups.org/)
 
 or whatever printing system is able to print from the 
-standard input
+standard input.
+
+## Example
+
+See [example.txt](example.txt) for an example printout. Note 
+that the example was made to test a leap year.
 
 ## Configuration
 
@@ -34,7 +39,7 @@ Important variables are:
 as well as the days of the week, which you can translate in
 your language.
 
-You can also edit the date formats in the following functions:
+You can also edit the date formats in the following script functions:
 
     get_full_string()
     print_day()
@@ -48,6 +53,16 @@ You can also edit the date formats in the following functions:
     $ ./monthly_attendace_paper.sh | lpr
 
 ## Warning
+
+This script heavily depends on tabs for formatting. What you see
+in a printout may be different to what you see on the screen;
+what you see on an editor after executing:
+
+    $ ./monthly_attendace_paper.sh > printout.txt
+
+might be different than:
+
+    $ ./monthly_attendace_paper.sh
 
 This script does not check any input nor output for errors. 
 That's up to you.

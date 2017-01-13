@@ -52,9 +52,9 @@ fi
 is_leap_year="false"
 if [ $(($this_year % 4)) -ne 0 ]; then
     is_leap_year="false"
-elif [ $(($this_year % 100)) -ne 0]; then
+elif [ $(($this_year % 100)) -ne 0 ]; then
     is_leap_year="true"
-elif [ $(($this_year % 400)) -ne 0]; then
+elif [ $(($this_year % 400)) -ne 0 ]; then
     is_leap_year="false"
 else
     is_leap_year="true"
