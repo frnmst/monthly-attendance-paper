@@ -1,0 +1,36 @@
+# monthly-attendace-paper - A simple bash script that generates a monthly
+# printout template to be used between an employer and employee.
+#
+# Written in 2017 by Franco Masotti/frnmst <franco.masotti@student.unife.it>
+#
+# To the extent possible under law, the author(s) have dedicated all
+# copyright and related and neighboring rights to this software to the public
+# domain worldwide. This software is distributed without any warranty.
+#
+# You should have received a copy of the CC0 Public Domain Dedication along
+# with this software. If not, see
+# <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+this_month="02"
+this_year="2017"
+
+title="Monthly attendance paper printout"
+employer="Employer: THE EMPLOYER"
+employee="Employee: THE EMPLOYEE"
+date_id="Month and Year: $this_month $this_year"
+
+day_column_header="Date/Month Day"
+args_column_header="Worked Hours / Entry time - Exit time"
+format="Format: \"$day_column_header    $args_column_header\""
+
+highlited_day="Sun"
+
+Mon="Monday"
+Tue="Tuesday"
+Wed="Wednesday"
+Thu="Thursday"
+Fri="Friday"
+Sat="Saturday"
+Sun="Sunday"
+
+
