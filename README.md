@@ -3,21 +3,31 @@
 A simple bash script that generates a monthly printout calendar template to be 
 used between an employer and employee.
 
-## Dependencies 
+## Table of contents
 
-All of them should be already installed in your system:
+<!--TOC-->
 
-- [GNU Bash](http://www.gnu.org/software/bash/bash.html)
-- [Coreutils](https://www.gnu.org/software/coreutils/)
-- [Gawk](http://www.gnu.org/software/gawk/)
-- [util-linux](https://www.kernel.org/pub/linux/utils/util-linux/)
+- [monthly-attendance-paper](#monthly-attendance-paper)
+  - [Table of contents](#table-of-contents)
+  - [Dependencies](#dependencies)
+  - [Example](#example)
+  - [Configuration](#configuration)
+  - [Running](#running)
+  - [Printing](#printing)
+  - [Warning](#warning)
+  - [License](#license)
 
-Optionally, to print the template:
+<!--TOC-->
 
-- [CUPS](http://www.cups.org/)
+## Dependencies
 
-or whatever printing system is able to print from the 
-standard input.
+| Package name | Version | Required |
+|--------------|---------|----------|
+| [GNU Bash](http://www.gnu.org/software/bash/bash.html) | 5.0.011(1) | yes |
+| [Coreutils](https://www.gnu.org/software/coreutils/) | 8.31 | yes |
+| [Gawk](http://www.gnu.org/software/gawk/) | 5.0.1 | yes |
+| [util-linux](https://www.kernel.org/pub/linux/utils/util-linux/) | 2.34 | yes |
+| [CUPS](http://www.cups.org/) | 2.3.0 | no |
 
 ## Example
 
@@ -26,18 +36,8 @@ that the example was made to test a leap year.
 
 ## Configuration
 
-Edit `configrc` based on your needs. 
-variable names are self-explanatory.
-
-Important variables are:
-
-    this_month
-    this_year
-    employer
-    employee
-
-as well as the days of the week, which you can translate in
-your language.
+Edit the `./configrc` file based on your needs. 
+Variable names are self-explanatory.
 
 You can also edit the date formats in the following script functions:
 
@@ -46,11 +46,11 @@ You can also edit the date formats in the following script functions:
 
 ## Running
 
-    $ ./monthly_attendace_paper.sh
+    $ ./monthly_attendace_paper.sh ./configrc
 
 ## Printing
 
-    $ ./monthly_attendace_paper.sh | lpr
+    $ ./monthly_attendace_paper.sh ./configrc | lpr
 
 ## Warning
 
@@ -58,11 +58,11 @@ This script heavily depends on tabs for formatting. What you see
 in a printout may be different to what you see on the screen;
 what you see on an editor after executing:
 
-    $ ./monthly_attendace_paper.sh > printout.txt
+    $ ./monthly_attendace_paper.sh ./configrc > printout.txt
 
 might be different than:
 
-    $ ./monthly_attendace_paper.sh
+    $ ./monthly_attendace_paper.sh ./configrc
 
 This script does not check any input nor output for errors. 
 That's up to you.

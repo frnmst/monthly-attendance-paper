@@ -1,7 +1,7 @@
 # monthly-attendace-paper - A simple bash script that generates a monthly
 # printout template to be used between an employer and employee.
 #
-# Written in 2017 by Franco Masotti/frnmst <franco.masotti@student.unife.it>
+# Written in 2017-2020 by Franco Masotti/frnmst <franco.masotti@live.com>
 #
 # To the extent possible under law, the author(s) have dedicated all
 # copyright and related and neighboring rights to this software to the public
@@ -11,26 +11,37 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-this_month="02"
-this_year="2017"
+# Days of week.
+MON="Monday"
+TUE="Tuesday"
+WED="Wednesday"
+THU="Thursday"
+FRI="Friday"
+SAT="Saturday"
+SUN="Sunday"
 
-title="Monthly attendance paper printout"
-employer="Employer: THE EMPLOYER"
-employee="Employee: THE EMPLOYEE"
-date_id="Month and Year: $this_month $this_year"
+# Month and year currently considered.
+THIS_MONTH=02
+THIS_YEAR=2020
 
-day_column_header="Date/Month Day"
-args_column_header="Worked Hours / Entry time - Exit time"
-format="Format: \"$day_column_header    $args_column_header\""
+# Header.
+TITLE='Monthly attendance paper printout'
+EMPLOYER="Employer: THE EMPLOYER"
+EMPLOYEE="Employee: THE EMPLOYEE"
+DATE_ID="Month and Year: "${THIS_MONTH}" ${THIS_YEAR}"
 
-highlited_day="Sun"
+DAY_COLUMN_HEADER="Date/Month Day"
+ARGS_COLUMN_HEADER="Worked Hours / Entry time - Exit time"
 
-Mon="Monday"
-Tue="Tuesday"
-Wed="Wednesday"
-Thu="Thursday"
-Fri="Friday"
-Sat="Saturday"
-Sun="Sunday"
+FORMAT="Format: \"${DAY_COLUMN_HEADER}    ${ARGS_COLUMN_HEADER}\""
 
+HIGHLITED_DAY='SUN'
+HIGHLITED_DAY_DELIMITER='||'
+NON_HIGHLITED_DAY_DELIMITER='  '
 
+# Formatting.
+## Tabulations and newlines.
+TABULATION_FOR_STANDARD_DAYS='printf \t\t\t'
+# Irregular days are 31th and 29th Februaries.
+TABULATION_FOR_IRREGULAR_DAYS='printf \t\t'
+NEWLINE='printf \n\n\n'

@@ -5,52 +5,52 @@ Employer: THE EMPLOYER
 
 Employee: THE EMPLOYEE
 
-Month and Year: 02 2012
+Month and Year: 02 2020
 
 
-  1/02	Wednesday  			  15/02	Wednesday  
+  1/02	Saturday  			  15/02	Saturday  
 
 
-  2/02	Thursday  			  16/02	Thursday  
+||2/02	Sunday||			||16/02	Sunday||
 
 
-  3/02	Friday  			  17/02	Friday  
+  3/02	Monday  			  17/02	Monday  
 
 
-  4/02	Saturday  			  18/02	Saturday  
+  4/02	Tuesday  			  18/02	Tuesday  
 
 
-||5/02	Sunday||			||19/02	Sunday||
+  5/02	Wednesday  			  19/02	Wednesday  
 
 
-  6/02	Monday  			  20/02	Monday  
+  6/02	Thursday  			  20/02	Thursday  
 
 
-  7/02	Tuesday  			  21/02	Tuesday  
+  7/02	Friday  			  21/02	Friday  
 
 
-  8/02	Wednesday  			  22/02	Wednesday  
+  8/02	Saturday  			  22/02	Saturday  
 
 
-  9/02	Thursday  			  23/02	Thursday  
+||9/02	Sunday||			||23/02	Sunday||
 
 
-  10/02	Friday  			  24/02	Friday  
+  10/02	Monday  			  24/02	Monday  
 
 
-  11/02	Saturday  			  25/02	Saturday  
+  11/02	Tuesday  			  25/02	Tuesday  
 
 
-||12/02	Sunday||			||26/02	Sunday||
+  12/02	Wednesday  			  26/02	Wednesday  
 
 
-  13/02	Monday  			  27/02	Monday  
+  13/02	Thursday  			  27/02	Thursday  
 
 
-  14/02	Tuesday  			  28/02	Tuesday  
+  14/02	Friday  			  28/02	Friday  
 
 
-					  29/02	Wednesday  
+					  29/02	Saturday  
 
 
 Format: "Date/Month Day    Worked Hours / Entry time - Exit time"
