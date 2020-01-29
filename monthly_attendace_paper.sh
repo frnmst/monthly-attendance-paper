@@ -87,7 +87,10 @@ if [ "${THIS_MONTH}" = '2' ] || [ "${THIS_MONTH}" = '02' ]; then
     is_febuary='true'
 fi
 
-# Algorithm got from Wikipedia.
+# Algorithm from Wikipedia.
+# Creative Commons Attribution-ShareAlike License 3.0
+# https://creativecommons.org/licenses/by-sa/3.0/
+# See https://en.wikipedia.org/wiki/Leap_year#Algorithm
 is_leap_year='false'
 if [ $((${THIS_YEAR} % 4)) -ne 0 ]; then
     is_leap_year='false'
