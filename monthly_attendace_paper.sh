@@ -135,7 +135,7 @@ if [ ${last_day_in_month_number} -eq 31 ]; then
 fi
 
 # February in a leap year.
-if [ "${is_leap_year}" = 'true' ]; then
+if [ "${is_febuary}" = 'true' ] && [ "${is_leap_year}" = 'true' ]; then
     ${TABULATION_FOR_STANDARD_DAYS}
     ${TABULATION_FOR_IRREGULAR_DAYS}
     print_day_right 29 $(((${day_id} + ${day_offset}) % 7))
