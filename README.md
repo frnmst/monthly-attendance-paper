@@ -3,6 +3,13 @@
 A simple bash script that generates a monthly printout calendar template to be 
 used between an employer and employee.
 
+**Warning: THIS REPOSITORY IS DEPRECATED. HAVE A LOOK HERE:**
+
+- https://software.franco.net.eu.org/frnmst/automated-tasks
+- https://codeberg.org/frnmst/automated-tasks
+- https://github.com/frnmst/automated-tasks
+- https://docs.franco.net.eu.org/automated-tasks/scripts.html#monthly-attendance-paper-py
+
 ## Table of contents
 
 <!--TOC-->
